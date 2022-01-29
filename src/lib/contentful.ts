@@ -5,6 +5,8 @@ import { Document } from "@contentful/rich-text-types";
 
 export interface IPostFields {
     title: string;
+    image: string;
+    date: string;
     slug: string;
     content: Document;
 }

@@ -43,7 +43,7 @@ const Post: NextPage<Props> = ({ posts }) => {
     if (!router.isFallback && !posts[0].fields.slug) {
         return <ErrorPage statusCode={404} />;
     }
-    const post = posts[0];
+    const post = posts[0]; // koko mondai
     return (
         <div className={styles.container}>
             <Head>

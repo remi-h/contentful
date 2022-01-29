@@ -37,6 +37,8 @@ const Home: NextPage<Props> = ({ posts }) => {
                   <Link href={post.fields.slug}>
                     <a>
                       <h2>{post.fields.title}</h2>
+                      <img src={post.fields.image.fields.file.url} width="240px"/>
+                      <p>posted on {post.fields.date}</p>
                     </a>
                   </Link>
                 </li>
